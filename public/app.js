@@ -183,6 +183,7 @@ connection.on('member', (msg) => {
     setTimeout(() => {
         joinMsgDelay -= addDelay;
         addChatItem('#21b2c2', msg, 'joined', true);
+        console.log(msg.nickname);
     }, joinMsgDelay);
 })
 
